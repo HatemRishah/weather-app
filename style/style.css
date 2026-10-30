@@ -6,14 +6,42 @@
   padding: 0;
 }
 
-:root {
-    
-}
-
 html {
   font-size: 18px;
 }
 
+:root {
+  --bg-color-900: hsl(243, 96%, 9%);
+  --units-color-800: hsl(243, 27%, 20%);
+  --fw300: 300;
+  --fw500: 500;
+  --fw600: 600;
+  --fw600i: 600;
+  --fw700: 700;
+  --ff-primary: "DM Sans", sans-serif;
+  --ff-heading: "Bricolage Grotesque", sans-serif;
+}
+
 body {
   font-size: 1rem;
+  background-color: var(--bg-color-900);
+  color: white;
+  font-family: var(--ff-primary);
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.units {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: var(--units-color-800);
+  border-radius: 8px;
 }
